@@ -11,6 +11,10 @@
   to = "/.netlify/functions/server"
   status = 200
 
+[context.develop.environment]
+  API_URL = "https://api.dev.example.com"
+  DATABASE_URL = "postgres://postgres:postgres@postgres:5432/postgres"
+
 [[headers]]
   for = "/build/*"
   [headers.values]
