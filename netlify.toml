@@ -11,7 +11,7 @@
   to = "/.netlify/functions/server"
   status = 200
 
-[context.develop.environment]
+[context.branch-deploy.environment]
   API_URL = "https://api.dev.example.com"
   DATABASE_URL = "postgres://postgres:postgres@postgres:5432/postgres"
 
